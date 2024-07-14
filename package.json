@@ -1,18 +1,22 @@
 {
   "name": "apple_clone",
   "private": true,
+  "homepage": "https://Diemrosely.github.io/iPhone-Clone",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@gsap/react": "^2.1.1",
     "@react-three/drei": "^9.108.3",
     "@react-three/fiber": "^8.16.8",
+    "gh-pages": "^6.1.1",
     "gsap": "^3.12.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
